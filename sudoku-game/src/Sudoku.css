@@ -1,0 +1,117 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #282c34; /* Midnight grey */
+    color: white; /* Text color */
+  }
+  
+  hr {
+    width: 500px;
+  }
+  
+  #mistakes {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  #board {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tile {
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2329; /* Dark grey */
+  }
+  
+  #digits {
+    width: 450px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .number {
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .number-selected {
+    background-color: gray;
+  }
+  
+  .tile-start {
+    background-color: lightslategray;
+  }
+  
+  .horizontal-line {
+    border-bottom: 1px solid black;
+  }
+  
+  .vertical-line {
+    border-right: 1px solid black;
+  }
+  
+  /* Responsive styles */
+  
+  @media screen and (max-width: 768px) {
+    #board {
+      width: 90%;
+      height: auto;
+    }
+  
+    .tile {
+      width: 10%;
+      height: auto;
+    }
+  
+    #digits {
+      width: 90%;
+      height: auto;
+    }
+  
+    .number {
+      width: 10%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #board {
+      width: 90%;
+      height: auto;
+    }
+  
+    .tile {
+      width: 20%;
+      height: auto;
+    }
+  
+    #digits {
+      width: 90%;
+      height: auto;
+    }
+  
+    .number {
+      width: 20%;
+      height: auto;
+    }
+  }
